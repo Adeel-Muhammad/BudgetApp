@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgeting Application</title>
+    <link rel="stylesheet" href="./bdg.css">
+    
+</head>
+<body>
+    <section>
+    <div class="mainheader container">
+        <h1>Budgeting App</h1>
+        <div class="bdg-content">
+            Add Budget
+<input type="number" placeholder="Enter the Budget" id="budget">
+
+<button id="budget-btn" onclick="AddBudget()">Add Budget</button>
+        </div>
+        <div class="expense-content">
+
+            Create Expense List
+
+            <input type="text" id="product-Name" placeholder="Enter the Product Name">
+            <input type="number" id="product-price" placeholder="Enter the Product Price">
+            <input type="date" id="product-date" placeholder="Enter the Product date">
+            <input type="text" id="product-description" placeholder="Enter the Product description">
+            <button id="expense-btn" onclick="createExpense()">Add Expense</button>
+        </div>
+
+        
+
+         <div class="tableofExpense">
+            <table id="table">
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th></th>
+                    </tr>
+                
+            </table>
+        </div>
+        <div class="result">
+            <div class="budget-rsl">
+                <h2>Budget</h2>
+                <p id="bdg-rsl">00</p>
+            </div>
+
+            <div class="Expen-rsl">
+                <h2>Expenses</h2>
+                <p id="exp-rsl">00</p>
+            </div>
+
+            <div class="balance-rsl">
+                <h2>Balance</h2>
+                <p id="balance">00</p>
+            </div>
+        
+        </div>
+       
+    </div>
+    <script src="./bdg.js"></script>
+    </section>
+</body>
+</html>
